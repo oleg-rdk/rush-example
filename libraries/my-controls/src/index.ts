@@ -1,1 +1,1 @@
-export { MyClass } from './MyClass';
+module.exports = { reactVersion: require("react").version }

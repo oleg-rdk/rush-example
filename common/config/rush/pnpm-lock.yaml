@@ -2,98 +2,78 @@ lockfileVersion: 5.3
 
 specifiers:
   '@rush-temp/my-app': file:./projects/my-app.tgz
+  '@rush-temp/my-app-react-17': file:./projects/my-app-react-17.tgz
   '@rush-temp/my-controls': file:./projects/my-controls.tgz
-  '@rush-temp/my-toolchain': file:./projects/my-toolchain.tgz
-  '@types/node': ^10.9.4
-  colors: ^1.3.2
-  rimraf: ^2.6.2
+  my-toolchain: ^1.0.0
   typescript: ^3.0.3
   whatwg-fetch: ^3.0.0
 
 dependencies:
   '@rush-temp/my-app': file:projects/my-app.tgz
+  '@rush-temp/my-app-react-17': file:projects/my-app-react-17.tgz
   '@rush-temp/my-controls': file:projects/my-controls.tgz
-  '@rush-temp/my-toolchain': file:projects/my-toolchain.tgz
-  '@types/node': 10.17.60
-  colors: 1.4.0
-  rimraf: 2.7.1
+  my-toolchain: 1.0.0
   typescript: 3.9.10
   whatwg-fetch: 3.6.2
 
 packages:
 
-  /@types/node/10.17.60:
-    resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
+  /js-tokens/4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: false
 
-  /balanced-match/1.0.2:
-    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
-    dev: false
-
-  /brace-expansion/1.1.11:
-    resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
+  /loose-envify/1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
     dependencies:
-      balanced-match: 1.0.2
-      concat-map: 0.0.1
+      js-tokens: 4.0.0
     dev: false
 
-  /colors/1.4.0:
-    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
-    engines: {node: '>=0.1.90'}
+  /my-toolchain/1.0.0:
+    resolution: {integrity: sha512-q0xSJro3XhOQk6nqabLCQyMLEgms9dsQLr6Nk0AOwV5cwV1/ReQN2kdbcdNe+Ve/6Fl1+UH72y7lKhZUPJ2iSw==}
+    requiresBuild: true
     dev: false
 
-  /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
-    dev: false
-
-  /fs.realpath/1.0.0:
-    resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
-    dev: false
-
-  /glob/7.1.7:
-    resolution: {integrity: sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==}
-    dependencies:
-      fs.realpath: 1.0.0
-      inflight: 1.0.6
-      inherits: 2.0.4
-      minimatch: 3.0.4
-      once: 1.4.0
-      path-is-absolute: 1.0.1
-    dev: false
-
-  /inflight/1.0.6:
-    resolution: {integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=}
-    dependencies:
-      once: 1.4.0
-      wrappy: 1.0.2
-    dev: false
-
-  /inherits/2.0.4:
-    resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
-    dev: false
-
-  /minimatch/3.0.4:
-    resolution: {integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==}
-    dependencies:
-      brace-expansion: 1.1.11
-    dev: false
-
-  /once/1.4.0:
-    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
-    dependencies:
-      wrappy: 1.0.2
-    dev: false
-
-  /path-is-absolute/1.0.1:
-    resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=}
+  /object-assign/4.1.1:
+    resolution: {integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=}
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /rimraf/2.7.1:
-    resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
-    hasBin: true
+  /prop-types/15.7.2:
+    resolution: {integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==}
     dependencies:
-      glob: 7.1.7
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
+  /react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react/16.8.0:
+    resolution: {integrity: sha512-g+nikW2D48kqgWSPwNo0NH9tIGG3DsQFlrtrQ1kj6W77z5ahyIHG0w8kPpz4Sdj6gyLnz0lEd/xsjOoGge2MYQ==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.7.2
+      scheduler: 0.13.6
+    dev: false
+
+  /react/17.0.0:
+    resolution: {integrity: sha512-rG9bqS3LMuetoSUKHN8G3fMNuQOePKDThK6+2yXFWtoeTDLVNh/QCaxT+Jr+rNf4lwNXpx+atdn3Aa0oi8/6eQ==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+    dev: false
+
+  /scheduler/0.13.6:
+    resolution: {integrity: sha512-IWnObHt413ucAYKsD9J1QShUKkbKLQQHdxRyw73sw4FN26iWr3DY/H34xGPe4nmL1DwXyWmSWmMrA9TfQbE/XQ==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
     dev: false
 
   /typescript/3.9.10:
@@ -106,34 +86,33 @@ packages:
     resolution: {integrity: sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==}
     dev: false
 
-  /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+  file:projects/my-app-react-17.tgz:
+    resolution: {integrity: sha512-l1bh7WcioslM7n+P0MvH2Xy+MbWPY9Na2fcHtd5Def1itRdOC/QZV6HdOl6KOYae4kqZBzudP2v0LsbVvwb5AQ==, tarball: file:projects/my-app-react-17.tgz}
+    name: '@rush-temp/my-app-react-17'
+    version: 0.0.0
+    dependencies:
+      my-toolchain: 1.0.0
+      react: 17.0.0
+      typescript: 3.9.10
+      whatwg-fetch: 3.6.2
     dev: false
 
   file:projects/my-app.tgz:
-    resolution: {integrity: sha512-5hQYNQ4OaheE4snzorkB/UcTAnQcq8uQ0uHMSpu7Q/3IPc6neV5wlvC9IM2aRs+YoC5MpjQlzP8AneCY+KngnQ==, tarball: file:projects/my-app.tgz}
+    resolution: {integrity: sha512-b5nG8O58DKWEo3gXk03XjcB/fyNsITOdGOuwG9oCQslnS8S6+m+zpVZHund013Rg7Aj+3mCZ9G/IwrpXyv2uAg==, tarball: file:projects/my-app.tgz}
     name: '@rush-temp/my-app'
     version: 0.0.0
     dependencies:
+      my-toolchain: 1.0.0
+      react: 16.8.0
       typescript: 3.9.10
       whatwg-fetch: 3.6.2
     dev: false
 
   file:projects/my-controls.tgz:
-    resolution: {integrity: sha512-9uBe99mh6UAW5iNqa1g+k1lCvgfhKpYVaxCj/jx7GWx88UyRspqJoCs+fhQQ5M0tJx/QJojjM84xVeR7WckqYg==, tarball: file:projects/my-controls.tgz}
+    resolution: {integrity: sha512-LORuU27KXn68Qwh2awj857pQsiDS4ehpaTcdwqKdfyFLaguxiUiLD8ht+5ZQeLM3O/hrM8v/n1fvjkdXaAoBOQ==, tarball: file:projects/my-controls.tgz}
     name: '@rush-temp/my-controls'
     version: 0.0.0
     dependencies:
-      typescript: 3.9.10
-    dev: false
-
-  file:projects/my-toolchain.tgz:
-    resolution: {integrity: sha512-Mrgh3K0R8vXqJ3y4QPfJS2i+aXJzNBKITsr6yPgHwDVpSNlHZgqcAVeWuYOTwLiiyuNGSjmykcV2kt9fsKWJZg==, tarball: file:projects/my-toolchain.tgz}
-    name: '@rush-temp/my-toolchain'
-    version: 0.0.0
-    dependencies:
-      '@types/node': 10.17.60
-      colors: 1.4.0
-      rimraf: 2.7.1
+      react: 17.0.0
       typescript: 3.9.10
     dev: false
